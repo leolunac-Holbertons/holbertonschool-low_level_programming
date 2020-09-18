@@ -18,6 +18,6 @@ int main(void)
 	{
 	putchar (alphabet);
 	}
-cputchar('\n');
+	putchar('\n');
 	return (0);
 }
