@@ -6,5 +6,5 @@
 /*Function that give the sign of any number*/
 void positive_or_negative(int i);
 
-#endif /* HOLBERTON_H */#ifndef HOLBERTON_H
+#endif /* HOLBERTON_H */
 
