@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *Main - Print Holberton with _putchar.
+ *main - print Holberton with _putchar.
  *
  *Return: Always 0 (Success)
  */
