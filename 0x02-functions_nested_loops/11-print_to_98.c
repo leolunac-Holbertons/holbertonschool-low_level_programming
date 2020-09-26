@@ -7,7 +7,7 @@
  *
  * Return: Return always void.
  */
-void print_to_98(int n)
+vvoid print_to_98(int n)
 {
 	int num;
 
