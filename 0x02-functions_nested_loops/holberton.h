@@ -31,4 +31,10 @@ void jack_bauer(void);
 /*Function to add two numbers*/
 int add(int, int);
 
+/*Function to print numbers until 98*/
+void print_to_98(int n);
+
+/*Function to print 9 times table*/
+void times_table(void);
+
 #endif /* _HOLBERTON_H_ */
