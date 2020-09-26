@@ -7,7 +7,7 @@
  *
  *
  */
-void times_table(void)
+vvoid times_table(void)
 {
 	int times;
 	int num;
