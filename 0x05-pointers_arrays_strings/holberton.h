@@ -1,7 +1,7 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
 
-/Function that prints characters*/
+/*Function that prints characters*/
 int _putchar(char c);
 
 /*Function to update a value by pointer*/
