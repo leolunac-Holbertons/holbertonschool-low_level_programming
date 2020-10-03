@@ -43,4 +43,3 @@ void print_number(int n)
 		divisor = divisor / 10;
 	}
 }
-
