@@ -1,4 +1,4 @@
-nclude "holberton.h"
+#include "holberton.h"
 
 /**
  * print_number - Prints any number with putchar
@@ -43,3 +43,4 @@ void print_number(int n)
 		divisor = divisor / 10;
 	}
 }
+
