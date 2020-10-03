@@ -18,7 +18,7 @@ int _strcmp(char *s1, char *s2);
 
 /*Function that reverses the content of an array of integers*/
 void reverse_array(int *a, int n);
-ar *string_toupper(char *);
+char *string_toupper(char *);
 
 /*function that capitalizes all words of a string*/
 char *cap_string(char *);
