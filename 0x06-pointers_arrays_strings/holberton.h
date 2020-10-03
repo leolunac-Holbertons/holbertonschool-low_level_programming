@@ -18,5 +18,18 @@ int _strcmp(char *s1, char *s2);
 
 /*Function that reverses the content of an array of integers*/
 void reverse_array(int *a, int n);
+ar *string_toupper(char *);
+
+/*function that capitalizes all words of a string*/
+char *cap_string(char *);
+
+/*function that encodes a string into 1337*/
+char *leet(char *);
+
+/*function that encodes a string using rot13*/
+char *rot13(char *);
+
+/*function that prints an integer*/
+void print_number(int n);
 
 #endif /* HOLBERTON_H */
