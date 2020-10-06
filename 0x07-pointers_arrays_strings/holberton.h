@@ -19,4 +19,7 @@ unsigned int _strspn(char *s, char *accept);
 /*Function that locates a substring*/
 char *_strstr(char *haystack, char *needle);
 
+/*Function that prints the chessboard*/
+void print_chessboard(char (*a)[8]);
+
 #endif /* HOLBERTON_H */
