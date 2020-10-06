@@ -1,4 +1,4 @@
-[2;2Rude "holberton.h"
+#include "holberton.h"
 
 /**
  * _strstr - Function that locates a substring.
@@ -6,7 +6,7 @@
  * @needle: Pointer to another string.
  *
  * Return: Pointer to where is the strings are equal.
- *//
+ */
 char *_strstr(char *haystack, char *needle)
 {
 	int i, j;
