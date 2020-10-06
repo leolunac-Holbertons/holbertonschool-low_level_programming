@@ -22,4 +22,7 @@ char *_strstr(char *haystack, char *needle);
 /*Function that prints the chessboard*/
 void print_chessboard(char (*a)[8]);
 
+/*Function that searches a string for any of a set of bytes*/
+char *_strpbrk(char *s, char *accept);
+
 #endif /* HOLBERTON_H */
