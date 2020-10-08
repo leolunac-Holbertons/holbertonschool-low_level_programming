@@ -1,29 +1,58 @@
 #include "holberton.h"
 
-int _pali(int len, char *s1, char *s2, int i)
+/**
+ * pali - Function to compare string.
+ *
+ * @i: counter to begin string.
+ * @len: lenght of the string.
+ * @s: String to evaluate.
+ *
+ * Return: 1 for palindrome . 0 for not palindrome.
+ *
+ */
+int pali(int i, int len, char *s)
 {
-        if (len >= 0 && s1[i] == s2[len])
-        {
-                _pali((len - 1),(s1),(s2), i + 1);
-                return (1);
-        }
-        else
-        {
-		return (0);
-        }
-
+  if (i == len - 1)
+    {
+      return (1);
+    }
+  else if (s[i] != s[len - 1])
+    {
+      return (0);
+    }
+  else if (i < len - 1)
+    {
+      return (pali(i + 1, len - 1, s));
+    }
+  return (1);
 }
-int _lenght(int len, char *s1, char *s2)
+/**
+ * lenght - Function for calculate lenght of the string.
+ *
+ * @s: String to evaluate.
+ *
+ * Return: lenght of the string.
+ *
+ */
+int lenght(char *s)
 {
-        if (s2 != '\0')
-        {
-                _lenght(len + 1, s1, s2 + 1);
-        }
-        return (len);
+  if (*s != '\0')
+    {
+      return (1 + lenght(s + 1));
+    }
+  return (0);
 }
+/**
+ * is_palindrome - Function to evaluate is a palindrome.
+ *
+ * @s: String to evaluate is a palindrome word.
+ *
+ * Return: 1 for palindrome . 0 for not palindrome.
+ *
+ */
 int is_palindrome(char *s)
 {
-        int l = _lenght(0, s, s);
+  int len = lenght(s);
 
-        return(_pali(l,s,s,0));
+  return (pali(0, len, s));
 }
