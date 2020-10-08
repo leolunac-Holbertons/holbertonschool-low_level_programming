@@ -22,5 +22,11 @@ int _pow_recursion(int x, int y);
 /*Function that returns the natural square root of a number*/
 int _sqrt_recursion(int n);
 
+/*Function that said is a number is prime*/
+int is_prime_number(int n);
+
+/*Function that returns 1 if a string is a palindrome and 0 if not*/
+int is_palindrome(char *s);
+
 #endif /* HOLBERTON_H */
 
