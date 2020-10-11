@@ -22,4 +22,5 @@ void print_rev(char *s);
 /*Function that reverses a string*/
 void rev_string(char *s);
 
+int _atoi(char *s);
 #endif /* HOLBERTON_H */
