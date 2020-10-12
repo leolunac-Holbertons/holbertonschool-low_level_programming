@@ -6,7 +6,7 @@
 * @argv: Character of arrays.
 *
 * Return: Succes is 0.
-        */
+*/
 int main(int argc, __attribute__((unused)) char *argv[])
 {
 	printf("%d\n", argc - 1);
