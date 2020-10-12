@@ -1,5 +1,5 @@
 #include "holberton.h"
-
+#include<stdio.h>
 /**
 * main - Program that prints its name, followed by a new line.
 * @argc: Number of command lines arguments.
@@ -13,9 +13,9 @@ int main(__attribute__((unused)) int argc, char *argv[])
 
 	while (*(argv[0] + i) != '\0')
 	{
-		_putchar(*(argv[0] + i));
+		putchar(*(argv[0] + i));
 		i++;
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
