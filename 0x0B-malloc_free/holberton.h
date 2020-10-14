@@ -19,4 +19,7 @@ int **alloc_grid(int width, int height);
 /*Function frees a 2-D grid previously created by your alloc_grid*/
 void free_grid(int **grid, int height);
 
+/*Function that concatenates all the arguments of your program*/
+char *argstostr(int ac, char **av);
+
 #endif /* HOLBERTON_H */
