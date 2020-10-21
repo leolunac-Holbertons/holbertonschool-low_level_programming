@@ -36,12 +36,12 @@ int main(int argc, char **argv)
 		exit(99);
 	}
 
-	inta = atoi(argv[1]);
-	intb = atoi(argv[3]);
+		inta = atoi(argv[1]);
+		intb = atoi(argv[3]);
 
-	printf("%d\n", f(inta, intb));
+		printf("%d\n", f(inta, intb));
 
-	return (0);
+		return (0);
 
 }
 
