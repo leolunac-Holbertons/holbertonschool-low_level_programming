@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include "3-calc.h"
+#include "functions_pointers.h"
 /**
 * main - main
 * @argc: arg count
