@@ -28,7 +28,7 @@ void print_opcodes(char *a, int n)
 * @argv: array of pointers to arguments
 *
 * Return: always O
-        */
+*/
 int main(int argc, char **argv)
 {
 	int n;
