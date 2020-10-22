@@ -44,7 +44,7 @@ int op_mul(int a, int b)
 * @b: second number
 *
 * Return: integer division of a by b
-        */
+*/
 int op_div(int a, int b)
 {
 	if (b == 0)
