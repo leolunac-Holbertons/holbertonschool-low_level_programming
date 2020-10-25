@@ -7,7 +7,7 @@
 * @separator: separator to print between the strings
 * @n: number of strings to print
 *
-* lReturn: void
+*Return: void
 */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
