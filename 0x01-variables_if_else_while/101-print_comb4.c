@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
+* betty style doc for function main goes there */
 /**
 * main - Entry point
 *
@@ -21,7 +21,7 @@ int main(void)
 	{
 		putchar(i);
 		putchar(j);
-		putchar(k);											putchar(k);
+		putchar(k);
 		if ((i == 55) && (j == 56) && (k == 57))
 		{
 			putchar('\n');
