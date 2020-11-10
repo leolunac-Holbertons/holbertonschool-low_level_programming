@@ -1,39 +1,76 @@
-#include <stdio.h>
+#include "holberton.h"
 #include <stdlib.h>
-/**
-* main - prints minimum number of coins to make change for an amount of money.
-* @argc: number of arguments passed to the function
-* @argv: argument vector of pointers to strings
-*
-* Return: 0 if no errors, else 1
-*/
-int main(int argc, char *argv[])
-{
-int a, n = 0, i, t;
-int c[5] = {25, 10, 5, 2, 1};
 
-	if (argc != 2)
+/**
+ * wrdcnt - counts the number of words in a string
+ * @s: string to count
+ *
+ * Return: int of number of words
+ */
+int wrdcnt(char *s)
+{
+	int i, n = 0;
+
+	for (i = 0; s[i]; i++)
 	{
-		puts("Error");
-		return (1);
-	}
-	a = atoi(argv[1]);
-	if (a <= 0)
-	{
-		puts("0");
-		return (1);
-	}
-	else
-	{
-		for (i = 0; i < 5; i++)
+		if (s[i] == ' ')
 		{
-			t = a / c[i];
-			a -= t * c[i];
-			n += t;
-			if (a == 0)
-				break;
+			if (s[i + 1] != ' ' && s[i + 1] != '\0')
+				n++;
 		}
+		else if (i == 0)
+			n++;
 	}
-	printf("%d\n", n);
-	return (0);
+	n++;
+	return (n);
+}
+
+/**
+* strtow - splits a string into words
+* @str: string to split
+*
+* Return: pointer to an array of strings
+*/
+char **strtow(char *str)
+{
+	int i, j, k, l, n = 0, wc = 0;
+	char **w;
+
+	if (str == NULL || *str == '\0')
+		return (NULL);
+	n = wrdcnt(str);
+	if (n == 1)
+		return (NULL);
+	w = (char **)malloc(n * sizeof(char *));
+	if (w == NULL)
+		return (NULL);
+	w[n - 1] = NULL;
+	i = 0;
+	while (str[i])
+	{
+		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
+		{
+			for (j = 1; str[i + j] != ' ' && str[i + j]; j++)
+				;
+			j++;
+			w[wc] = (char *)malloc(j * sizeof(char));
+			j--;
+			if (w[wc] == NULL)
+			{
+				for (k = 0; k < wc; k++)
+				free(w[k]);
+				free(w[n - 1]);
+				free(w);
+				return (NULL);
+			}
+			for (l = 0; l < j; l++)
+				w[wc][l] = str[i + l];
+			w[wc][l] = '\0';
+			wc++;
+			i += j;
+		}
+		else
+			i++;
+	}
+	return (w);
 }
