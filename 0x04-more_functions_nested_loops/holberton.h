@@ -34,4 +34,6 @@ void print_square(int size);
 /*Function to print a triangle*/
 void print_triangle(int size);
 
+void print_number(int n);
+
 #endif /* HOLBERTON_H */
